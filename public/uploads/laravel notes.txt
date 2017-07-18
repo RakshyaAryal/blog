@@ -1,0 +1,16 @@
+starting the server
+=> php artisan serve
+
+creating migration
+=> php artisan make:migration any_name(create_employee_table)
+
+run migration
+=> php artisan migrate
+
+
+create model
+=> php artisan make:model any_model_name(eg Employee)
+
+
+create controller
+=> php artisan make:controller any_controller_name(eg EmployeeController)
