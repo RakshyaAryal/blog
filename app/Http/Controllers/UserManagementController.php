@@ -76,6 +76,11 @@ class UserManagementController extends Controller
         $user = User::where('name', 'LIKE', '%'.$user.'%')->paginate(2);
         return view('user-management.index', compact('user'));
     }
+    public function logout()
+    {
+       Auth::logout();
+       return redirect('login');
+    }
 
 
 

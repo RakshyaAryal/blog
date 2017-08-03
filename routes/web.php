@@ -17,7 +17,6 @@ Route::get('/home/search', 'HomeController@search');
 Route::get('/category/{category}/{id}', 'HomeController@categoryWiseView');
 
 
-
 Auth::routes();
 
 Route::get('abc', 'HomeController@something');
@@ -82,7 +81,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('post/search', 'PostController@search');
 
 
-
+        Route::get('user-management/logout', 'UserManagementController@logout');
 
 
         Route::get('post/ajax-practice', function () {
